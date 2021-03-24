@@ -11,7 +11,13 @@ export const config = {
   parent: "phaser",
   width: 800,
   height: 600,
-  scene: playGame
+  scene: playGame,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      debug: false
+    }
+  }
 };
 
 const game = new Phaser.Game(config);
